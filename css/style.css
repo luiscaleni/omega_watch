@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color:rgba(23, 29, 43, 0.8);
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+header li {
+    font-size: 18px;
+    padding: 0px;
+    display: flex;
+}
+
+header li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 80px;
+}
+
+header li a:hover {
+    text-decoration: none;
+    color: rgba(23, 29, 43);
+    transition: .3s ease-out;
+    background-color: azure;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo1 {
+    display: inline-block;
+    margin: 50vh auto auto 20vh;
+    background-color: rgba(83, 83, 93, 0.5);
+    width: 350px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 80px;
+}
+
+.titulo1 h1, .titulo2 h1, .titulo3 h1, .titulo4 h1{
+    font-size: 80px;
+}
+
+span {
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 0px 0px 10px rgb(221, 221, 197);
+}
+
+
+.titulo2, .titulo3, .titulo4 {
+    display: inline-block;
+    margin-top: 720px;
+    background-color: rgba(152, 152, 167, 0.5);
+    width: auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid rgb(150, 163, 175);
+    border-radius: 80px;
+}
+
+.portada1 {
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../images/foto.jpg);
+}
+
+.portada2 {
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../images/reloj.jpg);
+}
+
+.portada3 {
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../images/reloj2.jpg);
+}
+
+.portada4 {
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../images/reloj3.jpg);
+}
+
+footer {
+    color: #fff;
+    font-size: 16px;
+    height: 6px;
+    padding: 20px;
+    margin-top: -46px;
+    background-color: rgba(23, 29, 43, 0.8);
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(196, 175, 57);
+    font-weight: bold;
+}
+
+#m, .mobile {
+    display: none;
+}
+
+@media (max-width:375px){
+    header {
+        width: 100%;
+        max-width: 375px;
+    }
+    .contenedor {
+        width: 100%;
+    }
+
+    #e {
+        display: none;
+    }
+
+    #m, .mobile {
+        display: block;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    ul li {
+        width: 100%;
+    }
+
+    header li a {
+        width: 100%;
+        color: #fff;
+        background-color: rgba(23, 29, 43);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo2, .titulo3, .titulo4 {
+        display: none;
+    }
+
+    .titulo1 {
+        margin: 32vh auto auto 1vh;
+        width: auto;
+    }
+
+    .portada1 {
+        height: 100vh;
+        background-size: cover;
+        background-image: url(../images/m/375x812/fotom-v.jpg);
+    }
+    
+    .portada2 {
+        height: 100vh;
+        background-size: cover;
+        background-image: url(../images/m/375x812/relojm-v.jpg);
+    }
+    
+    .portada3 {
+        height: 100vh;
+        background-size: cover;
+        background-image: url(../images/m/375x812/reloj2m-v.jpg);
+    }
+    
+    .portada4 {
+        height: 100vh;
+        background-size: cover;
+        background-image: url(../images/m/375x812/reloj3m-v.jpg);
+    }
+}
